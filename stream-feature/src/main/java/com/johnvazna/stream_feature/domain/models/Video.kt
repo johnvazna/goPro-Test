@@ -1,4 +1,7 @@
 package com.johnvazna.stream_feature.domain.models
 
-class Video {
-}
+data class Video(
+    val name: String,
+    val author: String,
+    val url: String
+)

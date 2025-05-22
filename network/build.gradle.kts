@@ -10,10 +10,10 @@ android {
 dependencies {
     implementation(project(":core"))
 
-    implementation(Dependencies.retrofit)
-    implementation(Dependencies.moshi)
-    implementation(Dependencies.moshiAdapter)
-    implementation(Dependencies.okHttp)
-    implementation(Dependencies.loggingInterceptor)
-    implementation(Dependencies.coroutines)
+    api(Dependencies.retrofit)
+    api(Dependencies.moshi)
+    api(Dependencies.moshiAdapter)
+    api(Dependencies.okHttp)
+    api(Dependencies.loggingInterceptor)
+    api(Dependencies.coroutines)
 }
