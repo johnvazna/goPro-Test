@@ -5,5 +5,5 @@ plugins {
 }
 
 android {
-    namespace = "com.gopro.streamplayer.core"
+    namespace = "com.johnvazna.core"
 }

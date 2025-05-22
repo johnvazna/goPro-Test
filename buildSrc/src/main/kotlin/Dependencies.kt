@@ -17,9 +17,11 @@ object Dependencies {
     const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:1.1.0"
 
     const val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
-    const val retrofitGson = "com.squareup.retrofit2:converter-gson:2.9.0"
-    const val okhttp = "com.squareup.okhttp3:okhttp:4.12.0"
-    const val okhttpLogging = "com.squareup.okhttp3:logging-interceptor:4.12.0"
+    const val moshi = "com.squareup.retrofit2:converter-moshi:2.9.0"
+    const val moshiAdapter = "com.squareup.moshi:moshi-kotlin:1.15.0"
+    const val okHttp = "com.squareup.okhttp3:okhttp:4.9.3"
+    const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:4.9.3"
+    const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
 
     const val exoplayer = "androidx.media3:media3-exoplayer:1.2.0"
     const val exoplayerHls = "androidx.media3:media3-exoplayer-hls:1.2.0"
