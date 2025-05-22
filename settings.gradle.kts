@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "GoProTest"
 include(":app")
 include(":core")
+include(":network")
