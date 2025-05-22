@@ -9,5 +9,5 @@ class VideoRepositoryImpl @Inject constructor(
     private val api: VideoApi
 ) : VideoRepository {
     override suspend fun fetchVideos(): List<Video> =
-        VideoMapper.fromList(api.getVideos())
+        VideoMapper.fromList(api.getVideos().videos)
 }

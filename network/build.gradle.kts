@@ -16,4 +16,5 @@ dependencies {
     api(Dependencies.okHttp)
     api(Dependencies.loggingInterceptor)
     api(Dependencies.coroutines)
+    api(Dependencies.converter)
 }

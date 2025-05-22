@@ -44,7 +44,6 @@ dependencies {
     "implementation"(Dependencies.lifecycle)
     "implementation"(Dependencies.activityCompose)
 
-    // Compose
     val composeBom = platform(Dependencies.composeBom)
     "implementation"(composeBom)
     "androidTestImplementation"(composeBom)
@@ -59,8 +58,6 @@ dependencies {
     "androidTestImplementation"(Dependencies.espresso)
     "androidTestImplementation"(Dependencies.composeTestJunit4)
 
-    //noinspection UseTomlInstead
     "debugImplementation"("androidx.compose.ui:ui-tooling")
-    //noinspection UseTomlInstead
     "debugImplementation"("androidx.compose.ui:ui-test-manifest")
 }

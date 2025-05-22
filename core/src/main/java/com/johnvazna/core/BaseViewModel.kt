@@ -2,23 +2,25 @@ package com.johnvazna.core
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
 
-abstract class BaseViewModel<UIState>(private val initial: UIState) : ViewModel() {
+abstract class BaseViewModel : ViewModel() {
 
-    private val _uiState = MutableStateFlow(initial)
-    val uiState: StateFlow<UIState> = _uiState
-
-    protected fun <T> launchUseCase(
-        block: suspend () -> Result<T>,
-        reducer: (Result<T>) -> UIState
+    protected fun <T> executeUseCase(
+        useCase: () -> Flow<Result<T>>,
+        stateFlow: MutableStateFlow<Result<T>>
     ) {
-        viewModelScope.launch {
-            _uiState.value = reducer(Result.Loading)
-            val result = block()
-            _uiState.value = reducer(result)
-        }
+        useCase()
+            .onEach { result -> stateFlow.value = result }
+            .launchIn(viewModelScope)
+    }
+
+    protected fun <T> createResultState(
+        initialValue: Result<T> = Result.Loading
+    ): MutableStateFlow<Result<T>> {
+        return MutableStateFlow(initialValue)
     }
 }

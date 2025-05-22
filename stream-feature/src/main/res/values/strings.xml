@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_videos">GoPro Videos</string>
+    <string name="label_error">Error:</string>
+    <string name="button_retry">Retry</string>
+    <string name="button_prepare">Prepare</string>
+    <string name="label_playing">Playing</string>
+    <string name="label_ready">Ready</string>
+    <string name="label_current">Current</string>
+
+    <string name="button_fetch_stream">Fetch Stream</string>
+    <string name="label_no_stream">No stream loaded</string>
+    <string name="button_play_stream">Play Stream</string>
+
+    <string name="content_desc_play">Playing video</string>
+    <string name="content_desc_warning">Warning Icon</string>
+    <string name="content_desc_playing">Video in playing mode</string>
+</resources>

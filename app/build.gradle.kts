@@ -1,5 +1,6 @@
 plugins {
     id("android-application-convention")
+    id("hilt-convention")
 }
 
 android {
@@ -16,4 +17,7 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":network"))
     implementation(project(":stream-feature"))
+
+    implementation(Dependencies.hiltNavigation)
+    implementation(Dependencies.composeNavigation)
 }
