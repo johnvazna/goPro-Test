@@ -1,4 +1,7 @@
 package com.johnvazna.stream_feature.data
 
-class VideoRepository {
+import com.johnvazna.stream_feature.domain.models.Video
+
+interface VideoRepository {
+    suspend fun fetchVideos(): List<Video>
 }

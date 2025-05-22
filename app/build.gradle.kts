@@ -8,6 +8,12 @@ android {
     defaultConfig {
         applicationId = "com.johnvazna.goprotest"
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
     }
+}
+
+dependencies {
+    implementation(project(":core"))
+    implementation(project(":network"))
+    implementation(project(":stream-feature"))
 }

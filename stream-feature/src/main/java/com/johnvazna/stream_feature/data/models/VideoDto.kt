@@ -1,4 +1,4 @@
-package com.johnvazna.stream_feature.data.model
+package com.johnvazna.stream_feature.data.models
 
 data class VideoDto(
     val name: String,
