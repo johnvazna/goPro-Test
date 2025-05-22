@@ -22,6 +22,7 @@ object Dependencies {
     const val okHttp = "com.squareup.okhttp3:okhttp:4.9.3"
     const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:4.9.3"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+    const val converter = "com.squareup.retrofit2:converter-gson:2.9.0"
 
     const val exoplayer = "androidx.media3:media3-exoplayer:1.2.0"
     const val exoplayerHls = "androidx.media3:media3-exoplayer-hls:1.2.0"
